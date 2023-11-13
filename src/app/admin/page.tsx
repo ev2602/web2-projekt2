@@ -1,12 +1,17 @@
 'use client'
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { Typography } from '@mui/material';
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 function AdminPage() {
     const { user, error, isLoading } = useUser();
-    //const { security, toggleSecurity, setSecurity } = useSecurity();
-    const security = localStorage.getItem("isSecure")
+    const [security, setSecurity] = useState<string | null>(null);
+    useEffect(() => {
+        if (typeof localStorage !== 'undefined') {
+          setSecurity(localStorage.getItem("isSecure"))
+        }
+      }, []);
+
     console.log(security)
 
     const roles = user ? (user['http://localhost:3000/roles'] as string[]) : [];
