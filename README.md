@@ -1,3 +1,13 @@
+## Zadatak
+Potrebno je izraditi web-aplikaciju koja će omogućiti potencijalnom napadaču korištenje dvije različite tehnike sigurnosnih napada, odnosno dvije ranjivosti web-aplikacija, iz dolje navedenih kategorija.
+
+Za svaku je potrebno implementirati:
+
+1. funkcionalnost kojom se omogućuje ranjivost
+2. funkcionalnost kojom se onemogućuje ranjivost
+Npr. napraviti "prekidač" (npr. checkbox, tipka ili padajući izbornik) kojim se ranjivost po želji uključuje i isključuje.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
